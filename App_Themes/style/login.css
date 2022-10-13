@@ -1,0 +1,151 @@
+.login-bg {
+    background:url(img/loginbg.png) #f6fce4 center center no-repeat fixed;
+    background-size: cover;
+}
+
+.login-content{
+    background:url(img/login_box_bg.png) top left no-repeat;
+    margin:100px auto 0 auto;
+    width:948px;
+    height:602px;
+    position:relative;
+    border-radius:8px;
+}
+
+
+.boxReset{
+    background:url(img/LoginReset.jpg) #ffffff  top left no-repeat;
+    margin:10px auto 0 auto;
+    width:384px;
+    height:514px;
+    position:relative;
+    border-radius:8px;
+    border:1px solid #cccccc;
+}
+
+.CompareValidator {
+    position:absolute;
+    top:315px;
+    left:95px;
+}
+.UserName {
+    position: absolute;
+    top: 285px;
+    left: 615px;
+    height: 34px;
+    width: 194px;
+    font-size: 18px !important;
+    color: #000 !important;
+    border: 1px solid #ffffff !important;
+    font-family: Arial;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.Password {
+    position: absolute;
+    top: 342px;
+    left: 615px;
+    height: 34px;
+    width: 194px;
+    font-size: 18px !important;
+    color: #000 !important;
+    border: 1px solid #ffffff !important;
+    box-shadow: none;
+    background: none;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.LoginButton {
+    position: absolute;
+    top: 446px;
+    left: 565px;
+    width: 260px;
+    height: 47px;
+    background: #f66200;
+    border-style: none;
+    color: #ffffff;
+    font-size: 22px;
+    border-radius: 4px;
+}
+
+.LoginButton:hover {
+
+background: #ff7b24;
+color: #ffffff;
+}
+
+.ResetButton {
+
+position:absolute;
+top:410px;
+left:25px;
+width:328px;
+height:60px;
+background:#979696;
+border-style:none;
+color:#ffffff;
+font-size:22px;
+border-radius:4px;
+}
+
+.ResetButton:hover {
+
+background:#979696;
+color:#ffffff;
+}
+
+
+
+.LoginButtonEnable {
+    position: absolute;
+    top: 505px;
+    left: 529px;
+    width: 328px;
+    background: rgba(0,0,0,0);
+    border-style: none;
+    color: #666;
+    font-size: 15px !important;
+}
+.LoginButtonEnable:hover {
+    color:#000;
+    text-decoration:underline;
+}
+
+.Literal {
+    position: absolute;
+    top: 530px;
+    left: 565px;
+    width: 260px;
+    font-weight: bold;
+    color: #f00;
+    font-size: 13px;
+    text-align: center;
+}
+
+.login-footer{
+    margin:0 auto;
+    width:380px;
+    height:30px;
+    text-align:center;
+    font-size:13px;
+    color:#7b7b7b;
+    margin-top: 10px;
+}
+.UserName2 {
+height:50px;
+font-size:18px !important;
+color:#000 !important;
+border:1px solid #e4e4e4 !important;
+font-family:Arial;
+}
+
+.Password2 {
+height:50px;
+font-size:18px !important;
+color:#000 !important;
+border:1px solid #e4e4e4 !important;
+box-shadow:none;
+background:none;
+}

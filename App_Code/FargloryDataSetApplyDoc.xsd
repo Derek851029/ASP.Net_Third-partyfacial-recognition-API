@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FargloryDataSetApplyDoc" targetNamespace="http://tempuri.org/FargloryDataSetApplyDoc.xsd" xmlns:mstns="http://tempuri.org/FargloryDataSetApplyDoc.xsd" xmlns="http://tempuri.org/FargloryDataSetApplyDoc.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="fg080" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fg080 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.fg080.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ApplyDocTableAdapter" GeneratorDataComponentClassName="ApplyDocTableAdapter" Name="ApplyDoc" UserDataComponentName="ApplyDocTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fg080 (Web.config)" DbObjectName="Farglory20190808.dbo.ApplyDoc" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [ApplyDoc_ApplyNo]
+    ,RTRIM([ApplyDoc_ChangeItem]) ApplyDoc_ChangeItem
+    ,Emp_AccountModify
+	,CASE WHEN ApplyDoc_Send = '01' THEN '平信' 
+		WHEN ApplyDoc_Send = '02' THEN '限時專送' 
+		WHEN ApplyDoc_Send = '03' THEN '掛號' 
+		WHEN ApplyDoc_Send = '04' THEN '限時掛號' 
+	END AS ApplyDoc_Send
+    ,CASE WHEN [ApplyDoc_SendDate] != '' THEN SUBSTRING([ApplyDoc_SendDate],1,3)+'/'+SUBSTRING([ApplyDoc_SendDate],4,2)+'/'+SUBSTRING([ApplyDoc_SendDate],6,2) ELSE '' END [ApplyDoc_SendDate] 
+    ,[Policy_Address]
+    ,[Status]
+    ,[Recipients]
+FROM ApplyDoc
+order by ApplyDoc_ApplyNo desc</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ApplyDoc_ApplyNo" DataSetColumn="ApplyDoc_ApplyNo" />
+              <Mapping SourceColumn="ApplyDoc_ChangeItem" DataSetColumn="ApplyDoc_ChangeItem" />
+              <Mapping SourceColumn="Emp_AccountModify" DataSetColumn="Emp_AccountModify" />
+              <Mapping SourceColumn="ApplyDoc_Send" DataSetColumn="ApplyDoc_Send" />
+              <Mapping SourceColumn="ApplyDoc_SendDate" DataSetColumn="ApplyDoc_SendDate" />
+              <Mapping SourceColumn="Policy_Address" DataSetColumn="Policy_Address" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="Recipients" DataSetColumn="Recipients" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FargloryDataSetApplyDoc" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="False" msprop:Generator_DataSetName="FargloryDataSetApplyDoc" msprop:Generator_UserDSName="FargloryDataSetApplyDoc">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ApplyDoc" msprop:Generator_TableClassName="ApplyDocDataTable" msprop:Generator_TableVarName="tableApplyDoc" msprop:Generator_TablePropName="ApplyDoc" msprop:Generator_RowDeletingName="ApplyDocRowDeleting" msprop:Generator_RowChangingName="ApplyDocRowChanging" msprop:Generator_RowEvHandlerName="ApplyDocRowChangeEventHandler" msprop:Generator_RowDeletedName="ApplyDocRowDeleted" msprop:Generator_UserTableName="ApplyDoc" msprop:Generator_RowChangedName="ApplyDocRowChanged" msprop:Generator_RowEvArgName="ApplyDocRowChangeEvent" msprop:Generator_RowClassName="ApplyDocRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ApplyDoc_ApplyNo" msprop:Generator_ColumnVarNameInTable="columnApplyDoc_ApplyNo" msprop:Generator_ColumnPropNameInRow="ApplyDoc_ApplyNo" msprop:Generator_ColumnPropNameInTable="ApplyDoc_ApplyNoColumn" msprop:Generator_UserColumnName="ApplyDoc_ApplyNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApplyDoc_ChangeItem" msprop:Generator_ColumnVarNameInTable="columnApplyDoc_ChangeItem" msprop:Generator_ColumnPropNameInRow="ApplyDoc_ChangeItem" msprop:Generator_ColumnPropNameInTable="ApplyDoc_ChangeItemColumn" msprop:Generator_UserColumnName="ApplyDoc_ChangeItem" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Emp_AccountModify" msprop:Generator_ColumnVarNameInTable="columnEmp_AccountModify" msprop:Generator_ColumnPropNameInRow="Emp_AccountModify" msprop:Generator_ColumnPropNameInTable="Emp_AccountModifyColumn" msprop:Generator_UserColumnName="Emp_AccountModify" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApplyDoc_Send" msprop:Generator_ColumnVarNameInTable="columnApplyDoc_Send" msprop:Generator_ColumnPropNameInRow="ApplyDoc_Send" msprop:Generator_ColumnPropNameInTable="ApplyDoc_SendColumn" msprop:Generator_UserColumnName="ApplyDoc_Send" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApplyDoc_SendDate" msprop:Generator_ColumnVarNameInTable="columnApplyDoc_SendDate" msprop:Generator_ColumnPropNameInRow="ApplyDoc_SendDate" msprop:Generator_ColumnPropNameInTable="ApplyDoc_SendDateColumn" msprop:Generator_UserColumnName="ApplyDoc_SendDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Policy_Address" msprop:Generator_ColumnVarNameInTable="columnPolicy_Address" msprop:Generator_ColumnPropNameInRow="Policy_Address" msprop:Generator_ColumnPropNameInTable="Policy_AddressColumn" msprop:Generator_UserColumnName="Policy_Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Recipients" msprop:Generator_ColumnVarNameInTable="columnRecipients" msprop:Generator_ColumnPropNameInRow="Recipients" msprop:Generator_ColumnPropNameInTable="RecipientsColumn" msprop:Generator_UserColumnName="Recipients" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,35 @@
+/* reset */
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+    padding: 0;
+}
+br{
+    display: block;
+    margin: 0 0 5px;
+}
+ol, ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.main-container ul,
+.main-container ol{    
+    margin: 0;
+    padding: 0 0 0 25px;
+}
+.main-container ol li{
+    list-style: decimal;
+}
+.main-container ul li{
+    list-style: disc;
+}
+
+body > img {
+    display: none;
+}
+img{
+    border: none;
+    max-width: 100%;
+}

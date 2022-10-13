@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Farglory20190808DataSet" targetNamespace="http://tempuri.org/Farglory20190808DataSet.xsd" xmlns:mstns="http://tempuri.org/Farglory20190808DataSet.xsd" xmlns="http://tempuri.org/Farglory20190808DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="fg080" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fg080 (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.fg080.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_CusTopicExamTableAdapter" Name="V_CusTopicExam">
+            <MainSource>
+              <DbSource ConnectionRef="fg080 (Web.config)" DbObjectName="Farglory20190808.dbo.V_CusTopicExam" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Exam_Class_No, Exam_Class_Name, Exam_Code, Exam_Name, Exam_Content, UseRange_Vox, UseRange_www, UseRange_Email, UseRange_Fax, UseRange_Mail, DialSTime, DialETime, ClassNo, PaperNo, QNo, Qcontent, Qvox, Digit, AnsType, Next_Exam, AnsCont1, Word1, AnsCont2, Word2, AnsCont3, Word3, AnsCont4, Word4, AnsCont5, Word5, Next_Exam4, Next_Exam5, Next_Exam3, Next_Exam2, Next_Exam1 FROM dbo.V_CusTopicExam</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Farglory20190808DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="False">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_CusTopicExam">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

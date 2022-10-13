@@ -1,0 +1,115 @@
+.w100{width: 100%;}
+.color-red{}
+.color-blue{}
+.color-green{
+	color: #53aa08;
+}
+
+.font-bold{
+	font-weight: bold;
+}
+
+.border-green{
+	border-color: #53aa08!important;
+}
+
+
+select{
+	padding-left: 6px;
+	border: 1px solid #afafaf;
+	border-radius: 4px;
+	height: 34px;
+}
+input::-ms-clear{display: none;}
+input[type="text"]{
+	padding: 0 6px;
+	border: 1px solid #afafaf;
+	border-radius: 4px;
+	height: 34px;
+	font-size: 15px;
+	font-weight: bold;
+	
+}
+input[type="text"]::placeholder{
+  color: #575757;
+  font-weight: normal;
+}
+
+.date-style input[type="text"] {
+  width: 137px;
+  background: url(img/datepicker-bg.svg) right center #fff no-repeat ;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.date-style input:focus,
+.date-style:hover input {
+    background: url(img/datepicker-bg2.svg) right center #fff no-repeat;
+}
+.date-style input:focus{
+	color: #1b4b9f;
+}
+input[type="submit"]{
+	background-color: #9c9c9c;
+    padding: 0 11px;
+    border-radius: 4px;
+    text-align: center;
+    height: 34px;
+    border: 0;
+    color: #fff;
+}
+input[type="submit"]:hover{
+	background-color:  #666;
+}
+input[type="submit"].btn-m{
+	padding: 0 23px;
+	height: 40px;
+}
+input[type="submit"].btn-orange{
+	background-color: #f66200;
+}
+input[type="submit"].btn-orange:hover{
+	background-color:  #ff822f;
+}
+input[type="submit"].btn-green{
+	background-color: #009741;
+}
+input[type="submit"].btn-red{
+	background-color: #da0000;
+}
+input[type="submit"].btn-red:hover{
+	background-color: #ff4949;
+}
+input[type="submit"].btn-green:hover{
+	background-color:  #05b04f;
+}
+input[type="submit"].btn-white{
+	border: 1px solid #f66200;
+	background-color:  #fff;
+	color: #f66200;
+	height: 32px;
+}
+input[type="submit"].btn-white:hover{
+	background-color:  #f66200;
+	color: #fff;
+}
+
+
+.alignC{
+	text-align: center;
+}
+
+.inline{
+	display: inline-block;
+}
+.block{
+	display: block;
+}
+
+
+.paddingB-m{
+	padding-bottom: 20px;
+}
+.marginB-m{
+	margin-bottom: 20px;
+}
